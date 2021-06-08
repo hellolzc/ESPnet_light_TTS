@@ -1,6 +1,6 @@
 # ESPnet light TTS
 
-An unofficial simplified version of ![ESPnet](README_ESPnet.md).
+An unofficial simplified version of [ESPnet](README_ESPnet.md).
 
 ## Targets
 
@@ -12,11 +12,13 @@ An unofficial simplified version of ![ESPnet](README_ESPnet.md).
     [ ] Simplify scripts in 'egs2'
 
 ## Progress
+
 There is still a lot of work to be done.
+Welcome to raise an issue or open a pull request.
 
+### Changes of 'utils'
 
-## utils
-add following scripts of kaldi as PWG
+Add following scripts of kaldi same as [kan-bayashi's PWG](https://github.com/kan-bayashi/ParallelWaveGAN):
 ```
 combine_data.sh
 (download_from_google_drive.sh)
