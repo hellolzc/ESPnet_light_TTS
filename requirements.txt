@@ -26,17 +26,20 @@ pysptk>=0.1.17
 sentencepiece<0.1.90,>=0.1.82
 nltk>=3.4.5
 morfessor
+
 # File IO related
 PyYAML>=5.1.2
 soundfile>=0.10.2
 h5py>=2.10.0
 kaldiio>=2.17.0
+
 # TTS related
 inflect>=1.0.0
 unidecode>=1.0.22
 pyworld>=0.2.10
 nnmnkwii
 espnet_tts_frontend
+
 # ASR frontend related
 museval>=0.2.1
 pystoi>=0.2.2
@@ -44,6 +47,7 @@ nara_wpe>=0.0.5
 torch_complex
 pytorch_wpe
 mir-eval>=0.6
+
 # VC related
 fastdtw
 pyworld
