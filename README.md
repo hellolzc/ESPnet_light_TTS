@@ -17,6 +17,8 @@ An unofficial simplified version of [ESPnet](README_ESPnet.md).
 There is still a lot of work to be done.
 Welcome to raise an issue or open a pull request.
 
+## Note
+
 ### Changes of 'utils'
 
 Add following scripts from kaldi:
@@ -45,4 +47,5 @@ subset_data_dir.sh
     filter_scp.pl
 copy_data_dir.sh
     apply_map.pl
+fix_data_dir.sh
 ```
