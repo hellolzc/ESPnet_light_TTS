@@ -10,6 +10,7 @@ An unofficial simplified version of [ESPnet](README_ESPnet.md).
     [ ] Remove support for multicomputer distributed systems (Slurm etc.)
     [ ] Remove 'egs' (examples of ESPnet 1)
     [ ] Simplify scripts in 'egs2'
+    [ ] Remove model uploading
 
 ## Progress
 
@@ -18,10 +19,10 @@ Welcome to raise an issue or open a pull request.
 
 ### Changes of 'utils'
 
-Add following scripts of kaldi same as [kan-bayashi's PWG](https://github.com/kan-bayashi/ParallelWaveGAN):
+Add following scripts from kaldi:
 ```
+# Following PWG [kan-bayashi's PWG](https://github.com/kan-bayashi/ParallelWaveGAN)
 combine_data.sh
-(download_from_google_drive.sh)
 make_subset_data.sh
 parse_options.sh
 queue.pl
@@ -30,5 +31,18 @@ slurm.pl
 split_data.sh
 split_scp.pl
 ssh.pl
+# Already exits
+(download_from_google_drive.sh)
 (stdout.pl)
+
+# Add to fix running problems
+    utt2spk_to_spk2utt.pl
+    spk2utt_to_utt2spk.pl
+validate_data_dir.sh
+subset_data_dir.sh
+    validate_text.pl
+    subset_scp.pl
+    filter_scp.pl
+copy_data_dir.sh
+    apply_map.pl
 ```

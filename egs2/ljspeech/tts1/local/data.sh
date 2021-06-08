@@ -23,7 +23,9 @@ fi
 
 . ./path.sh || exit 1;
 . ./cmd.sh || exit 1;
-. ./db.sh || exit 1;
+# . ./db.sh || exit 1;
+# Set the path of your corpus
+LJSPEECH=downloads
 
 if [ -z "${LJSPEECH}" ]; then
    log "Fill the value of 'JSUT' of db.sh"
