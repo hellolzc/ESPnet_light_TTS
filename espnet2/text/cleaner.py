@@ -1,7 +1,7 @@
 from typing import Collection
 
 from jaconv import jaconv
-import tacotron_cleaner.cleaners
+from .tacotron_cleaner import cleaners as tacotron_cleaner_cleaners
 from typeguard import check_argument_types
 
 try:
@@ -33,7 +33,7 @@ class TextCleaner:
     def __call__(self, text: str) -> str:
         for t in self.cleaner_types:
             if t == "tacotron":
-                text = tacotron_cleaner.cleaners.custom_english_cleaners(text)
+                text = tacotron_cleaner_cleaners.custom_english_cleaners(text)
             elif t == "jaconv":
                 text = jaconv.normalize(text)
             elif t == "vietnamese":
